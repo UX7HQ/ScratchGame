@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 刮前的底图
     const backgroundImage = new Image();
-    backgroundImage.src = 'cta-2.png'; // 替换为刮前的完整图案路径
+    backgroundImage.src = 'https://raw.githubusercontent.com/UX7HQ/ScratchGame/main/780.jpg'; // 替换为刮前的完整图案路径
 
     backgroundImage.onload = function() {
         ctx.drawImage(backgroundImage, 0, 0, scratchLayer.width, scratchLayer.height);
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 刮后显示的图案
     const congratulationsImage = new Image();
-    congratulationsImage.src = 'UX7-logo-BIG-SIZE.png'; // 替换为刮后显示的 "恭喜中奖" 图案路径
+    congratulationsImage.src = 'https://raw.githubusercontent.com/UX7HQ/ScratchGame/main/UX7TRY.png'; // 替换为刮后显示的 "恭喜中奖" 图案路径
 
     // 记录用户刮的次数
     let scratchCount = 0;
